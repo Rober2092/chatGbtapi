@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OpenAI Image Generator</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<h1>OpenAI Image Generator</h1>
+	<form method="POST" action="{{ url_for('generate') }}">
+		<label for="prompt">Prompt:</label>
+		<input type="text" id="prompt" name="prompt">
+		<input type="submit" value="Generate">
+	</form>
+</body>
+</html>
